@@ -1,4 +1,5 @@
 # Frontend Mentor - NFT preview card component
+## Live Link - https://saurabh-nft-preview-card.netlify.app/
 
 ![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)
 
