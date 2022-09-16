@@ -1,0 +1,145 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --cyan-trans: hsla(178, 100%, 50%, 0.5);
+
+  /* Neutral */
+
+  --line: hsl(215, 32%, 27%);
+  --cardBG: hsl(216, 50%, 16%);
+  --mainBG: hsl(217, 54%, 11%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  background-color: var(--mainBG);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--cardBG);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  border-radius: 1rem;
+  gap: 15px;
+  max-width: 350px;
+  box-shadow: 8px 8px 16px #0b1625, -8px -8px 16px #0f1d31;
+}
+.image-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.image-container img {
+  object-fit: cover;
+  width: 100%;
+  z-index: 2;
+}
+
+.tint {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--cyan-trans);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.tint img {
+  width: 15%;
+}
+.tint:hover {
+  transition: 1s;
+  opacity: 1;
+}
+
+h1 {
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 0.4rem 0;
+}
+h1:hover {
+  color: var(--cyan);
+  transition: 1s;
+}
+.container p:first-of-type {
+  font-size: 18px;
+  color: var(--softBlue);
+  font-weight: 200;
+}
+
+.one span {
+  color: var(--cyan);
+  font-weight: 600;
+}
+.two span {
+  color: var(--softBlue);
+}
+
+.line {
+  background-color: var(--line);
+  height: 0.15rem;
+}
+
+.new-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.child-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.ctwo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: 200;
+}
+.ctwo span {
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.ctwo span:hover {
+  color: var(--cyan);
+  transition: 1s;
+}
+
+.ctwo img {
+  width: 3rem;
+  border: 0.15rem solid var(--white);
+  border-radius: 50%;
+}
